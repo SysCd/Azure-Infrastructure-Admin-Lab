@@ -48,6 +48,9 @@ This lab focuses on the deployment and administration of Azure infrastructure, w
 - Azure Virtual Machines
 - Azure Virtual Network
 - Azure Network Security Groups
+- Azure Monitor
+- Recovery Services Vault
+- Azure Backup
 - SSH
 - UFW
 - Bash
@@ -79,6 +82,18 @@ SSH access to the Terraform-managed Ubuntu VM, showing successful remote access 
 
 ![Terraform VM SSH Baseline](docs/screenshots/terraform-vm-ssh-baseline-redacted.png)
 
+### Azure Monitor Performance
+
+Azure Monitor performance view for the Terraform-managed VM, showing collected CPU utilisation and available memory metrics.
+
+![Azure Monitor Performance](docs/screenshots/azure-monitor-performance-redacted.png)
+
+### Azure Backup
+
+Azure Backup configuration for the Terraform-managed VM using a Recovery Services vault, including successful protection setup and completion of the first on-demand backup job.
+
+![Azure Backup Job Complete](docs/screenshots/azure-backup-job-complete-redacted.png)
+
 ## Repository Structure
 
 ```text
@@ -90,7 +105,9 @@ Azure-Infrastructure-Admin-Lab/
 │       ├── azure-vm-baseline-redacted.png
 │       ├── azure-resources-overview-redacted.png
 │       ├── azure-nsg-inbound-rules-redacted.png
-│       └── terraform-vm-ssh-baseline-redacted.png
+│       ├── terraform-vm-ssh-baseline-redacted.png
+│       ├── azure-monitor-performance-redacted.png
+│       └── azure-backup-job-complete-redacted.png
 ├── terraform/
 │   ├── main.tf
 │   ├── variables.tf
@@ -111,12 +128,10 @@ Azure-Infrastructure-Admin-Lab/
 - Built Azure networking foundations in Terraform
 - Provisioned a Terraform-managed Linux VM in Azure
 - Restricted inbound SSH access through an NSG rule
-
-## Next Steps
-
-- Enable Azure monitoring for the Terraform-managed VM
-- Add backup configuration for core infrastructure resources
-- Expand documentation with an architecture diagram and detailed build notes
+- Enabled Azure monitoring for the Terraform-managed VM
+- Created a Recovery Services Vault for the lab environment
+- Enabled backup protection for the Terraform-managed VM
+- Completed the first on-demand backup job
 
 ## Purpose
 
