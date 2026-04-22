@@ -37,7 +37,11 @@ This lab focuses on the deployment and administration of Azure infrastructure, w
 
 ## Screenshots
 
-- `docs/screenshots/screenshot-1.png` – SSH access to the Azure Ubuntu VM from macOS, including baseline validation of hostname, network, storage, memory, and firewall status
+### Azure VM baseline validation
+
+SSH access to the Azure Ubuntu VM from macOS, including baseline validation of hostname, network, storage, memory, and firewall status.
+
+![Azure VM baseline validation](docs/screenshots/screenshot-1.png)
 
 ## Technologies Used
 
