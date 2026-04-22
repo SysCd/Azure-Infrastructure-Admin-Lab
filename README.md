@@ -35,13 +35,11 @@ This lab focuses on the deployment and administration of Azure infrastructure, w
 - Verified hostname, operating system, kernel, memory, storage, and network configuration
 - Collected and documented baseline operational checks for the deployed VM
 
-## Screenshots
+### Terraform Deployment
 
-### Azure VM baseline validation
-
-SSH access to the Azure Ubuntu VM from macOS, including baseline validation of hostname, network, storage, memory, and firewall status.
-
-![Azure VM baseline validation](docs/screenshots/screenshot-1.png)
+- Provisioned an Azure resource group, virtual network, subnet, and network security group using Terraform
+- Applied an NSG rule to restrict SSH access to a trusted source IP
+- Validated the Terraform workflow using `init`, `validate`, `plan`, and `apply`
 
 ## Technologies Used
 
@@ -53,12 +51,30 @@ SSH access to the Azure Ubuntu VM from macOS, including baseline validation of h
 - SSH
 - UFW
 - Bash
-- Terraform _(planned expansion)_
+- Terraform
 
-## Next Steps
+## Screenshots
 
-- Restrict SSH access at NSG level to trusted source IPs only
-- Deploy additional Azure resources using Terraform
-- Add a second VM for multi-host administration testing
-- Implement monitoring and backup services
-- Expand documentation with architecture diagrams and deployment notes
+### Azure VM baseline validation
+
+SSH access to the Azure Ubuntu VM from macOS, including baseline validation of hostname, network, storage, memory, and firewall status.
+
+![Azure VM baseline validation](docs/screenshots/azure-vm-baseline-redacted.png)
+
+## Repository Structure
+
+```text
+Azure-Infrastructure-Admin-Lab/
+├── README.md
+├── docs/
+│   ├── build-notes.md
+│   └── screenshots/
+│       └── azure-vm-baseline-redacted.png
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   ├── providers.tf
+│   └── terraform.tfvars
+└── .gitignore
+```
