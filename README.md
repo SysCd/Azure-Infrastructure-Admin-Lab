@@ -79,12 +79,6 @@ SSH access to the Terraform-managed Ubuntu VM, showing successful remote access 
 
 ![Terraform VM SSH Baseline](docs/screenshots/terraform-vm-ssh-baseline-redacted.png)
 
-### Host Firewall Validation
-
-Host firewall configuration inside the Terraform-managed VM, showing UFW enabled with OpenSSH allowed and inbound traffic denied by default.
-
-![Terraform VM UFW Status](docs/screenshots/terraform-vm-ufw-redacted.png)
-
 ## Repository Structure
 
 ```text
@@ -96,8 +90,7 @@ Azure-Infrastructure-Admin-Lab/
 │       ├── azure-vm-baseline-redacted.png
 │       ├── azure-resources-overview-redacted.png
 │       ├── azure-nsg-inbound-rules-redacted.png
-│       ├── terraform-vm-ssh-baseline-redacted.png
-│       └── terraform-vm-ufw-redacted.png
+│       └── terraform-vm-ssh-baseline-redacted.png
 ├── terraform/
 │   ├── main.tf
 │   ├── variables.tf
