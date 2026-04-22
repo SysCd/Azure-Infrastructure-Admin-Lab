@@ -1,4 +1,7 @@
-# Azure Infrastructure Admin Lab
+<h1 align="center">
+  <img src="docs/assets/azure-logo.png" alt="Azure" width="50" valign="middle">
+  Azure Infrastructure Admin Lab
+</h1>
 
 Hands-on Azure infrastructure project focused on building and administering core cloud infrastructure in a practical lab environment. The project is designed to strengthen skills in Linux administration, Azure virtual networking, network security, secure remote access, and infrastructure as code with Terraform.
 
